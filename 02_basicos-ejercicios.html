@@ -11,6 +11,20 @@
   <h1>Ejercicios de Programación en JavaScript</h1>
   <script>
     /* 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
+    /*function contarCadena(string = ""){
+      if(!string){
+        console.warn("No ingresaste ningun string");
+      } else{
+        console.info(`El string "${string}" tiene ${string.length} caracteres`);
+      }
+};*/
+const contarCadena = (string = "") =>
+ (!string)
+  ? console.warn("No ingresaste ningun string")
+  : console.info(`El string "${string}" tiene ${string.length} caracteres`);
+
+contarCadena();
+contarCadena("Hola Mundo");
 
 
     /* 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
